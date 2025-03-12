@@ -107,7 +107,16 @@ class FanLaptop
                 Console.WriteLine($"{produk}: {kodeProduk.getKodeProduk(produk)}");
             }
 
-       
+            FanLaptop fanLaptop = new FanLaptop();
+            fanLaptop.Status();
+
+            string input = "";
+            while (input.ToLower() != "Quit") ;
+
+            Console.WriteLine("Command (Up, Down, Shortcut : ");
+            input = Console.ReadLine();
+
+            if (Enum.TryParse(input, out FanLaptop.Trigger trigger));
         }
     }
 }
